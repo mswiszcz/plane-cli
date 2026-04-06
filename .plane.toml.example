@@ -1,0 +1,6 @@
+# Plane CLI project configuration
+# Copy to .plane.toml and fill in your values
+
+workspace = "my-company"
+project = "backend"
+# base_url = "https://api.plane.so"  # uncomment for self-hosted

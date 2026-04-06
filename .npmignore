@@ -1,0 +1,9 @@
+src/
+e2e/
+docs/
+.claude/
+.gitignore
+.plane.toml
+tsconfig.json
+vitest.config.ts
+*.test.ts

@@ -1,0 +1,52 @@
+{
+  "name": "@mswiszcz/plane-cli",
+  "version": "0.1.0",
+  "description": "CLI for Plane.so project tracker",
+  "type": "module",
+  "bin": {
+    "plane": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "test:e2e": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "plane",
+    "plane.so",
+    "cli",
+    "project-management",
+    "work-items"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswiszcz/plane-cli.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@inquirer/prompts": "^7.5.0",
+    "@makeplane/plane-node-sdk": "^0.2.9",
+    "chalk": "^5.4.1",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0",
+    "marked": "^15.0.7",
+    "marked-terminal": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.2"
+  }
+}
