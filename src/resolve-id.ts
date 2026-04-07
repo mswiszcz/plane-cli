@@ -12,6 +12,10 @@ export function isSequenceId(id: string): boolean {
   return SEQUENCE_ID_PATTERN.test(id);
 }
 
+export function isPlainNumber(id: string): boolean {
+  return /^\d+$/.test(id);
+}
+
 export function isUuid(id: string): boolean {
   return UUID_PATTERN.test(id);
 }

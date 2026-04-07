@@ -27,7 +27,7 @@ export const listWorkItemsCommand = new Command("list")
 
       const response = await client.workItems.list(workspace, projectId, {
         per_page: parseInt(opts.limit, 10),
-        expand: "state,labels,assignees",
+        expand: "state,labels,assignees,project",
       } as any);
       const expanded = response.results;
 
